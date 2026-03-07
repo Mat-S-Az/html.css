@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1{
+    text-shadow:  0.5px 0.5px 1px #3d000078;
+}
+h2{
+    text-shadow:  1px 1px 3px #4c0b016f;
+}
+
+p {
+    text-align: justify;
+    color: #000000;
+}
+
+/* MENU */
+#menu1 {
+    color: white;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 40px;
+    padding: 0 10px;
+    margin: -10px;
+
+    background-image: linear-gradient(to left,#e5431e, #ce0303);
+}
+
+/* Título do menu */
+header > div {
+    font-size: 10px;
+}
+
+/* Navegação */
+#navegacao {
+    display: flex;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px; /* melhora o espaçamento entre links */
+}
+
+/* CARDS */
+#cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* melhora o espaçamento */
+}
+
+.artigo {
+    flex: 1; /* todas ocupam o mesmo tamanho */
+    background-image: linear-gradient(to right, #e5431e, #ce0303);
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #460000;
+    padding: 5px;
+    display: flex;
+    flex-direction: column; /* mantém título e texto alinhados */
+}
+
+.artigo:hover{ transform: scale(1.05);
+box-shadow: 3px 3px 10px #460000;
+cursor: pointer;}
+
+
+.artigop {
+    color: #ffffff;
+}
+
+/* Classe menu (caso use) */
+.menu {
+    margin-right: 15px;
+}
+
+footer{ 
+background-color: #000000;
+margin: -10px;
+
+}
+
+footer>p{color: #ffffff;
+text-align: center;
+height: 20px;}

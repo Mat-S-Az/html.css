@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a:visited {
+            color: brown;
+        }
+        a:active { 
+            color: yellow;
+        }
+        a:hover { 
+            text-decoration: underline;
+        }
+
+        .especial::after { 
+            content: '!!!';
+        }
+
+       .especial::before {
+            content: '!!!';
+        }
+
+        
+    </style>
+   
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <p>passe o mouse por cima para ver um texto escondido</p>
+    <div>
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO!!!</p>
+    </div>
+
+
+    <h2>Links</h2>
+    <p><a href="https://www.youtube.com/watch?v=TtkFsfOP9QI" class="especial">link 1</a></p>
+    <p><a href="https://www.youtube.com/watch?v=TtkFsfOP9QI">link 2</a></p>
+    <p><a href="https://www.youtube.com/watch?v=TtkFsfOP9QI">link 3</a></p>
+</body>
+</html>

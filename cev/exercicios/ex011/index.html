@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de imagens</title>
+</head>
+<body>
+    <p>Testando adaptação de imagens</p>
+    <picture>
+        <source media="(max-width: 800px)" srcset="imagens/Untitled.png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png">
+        <img src="imagens/grande.png" alt="imagem_grande">
+    </picture>
+    <p>Carregando áudios</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg"> 
+        <p>Infelimente seu navegador não é compatível com o áudio, <a href="audio.mp3">clique aqui para dowload</a></p>
+        
+    </audio>
+</body>
+</html>
