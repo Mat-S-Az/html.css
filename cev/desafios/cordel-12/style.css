@@ -1,0 +1,136 @@
+ @font-face{
+            font-family: passion;
+            src: url(fontes/Passion_One/PassionOne-Bold.ttf)
+            format(opentype);}
+        @font-face {
+            font-family: Sriracha;
+            src: url(fontes/Sriracha/Sriracha-Regular.ttf)
+            format(truetype);
+        }
+
+        html{
+            font-size: 2vw;
+        }
+
+        body{
+            margin:0%;
+            overflow-x: hidden;
+        }
+            
+        
+        header {
+            
+            background-color: black;
+            padding-bottom: 50px;
+            margin: -20px;
+            margin-top: -25px;
+            
+
+            
+        }
+
+        #cabeca {
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #h1 {
+            font-variant: small-caps;
+            font-size: 4.5em;
+            font-style: normal;
+            font-weight: 400;
+            font-family: 'passion';
+            margin-bottom: -10px;
+            margin-top: 3;
+                      
+        }
+
+        #HP {
+            font-weight: lighter;
+            font-size: medium;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        #link:hover{
+            text-decoration: underline;
+        }
+
+        #link {
+            text-decoration: none;
+            color: white;
+            font-weight: 900;
+        }
+
+        article{
+            
+            font-family: 'Sriracha', cursive;
+        }
+
+        .branco{
+            background-color: white;
+            text-align: left;
+            padding: 20px;  
+            padding-bottom: 70px; 
+            padding-top: 70px;
+            line-height: 3em;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.517);         
+        }
+
+        .preto{
+            padding: 20px;
+            color: white;
+            padding-bottom: 70px; 
+            padding-top: 70px;
+            line-height: 3em;
+            box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.603);
+            
+                   
+        }
+
+        #ppreto{
+            background-image: url(imagens/background001.jpg);
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;           
+        }
+        
+        #spreto{
+            background-image: url(imagens/background002.jpg);
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;          
+        }
+
+        .parapreto {
+            background-color: rgba(0, 0, 0, 0.332);
+            width: fit-content;
+            
+        }
+
+        article>div>p {
+            font-size: 1.6em;
+            padding: 7px;
+            
+        }
+
+        footer {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;;
+            background-color: black;
+            color: white;
+            text-align: center;
+           
+            font-size: 1em;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        footer>p>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
