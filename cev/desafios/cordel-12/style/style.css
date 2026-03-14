@@ -1,10 +1,10 @@
  @font-face{
             font-family: passion;
-            src: url(fontes/Passion_One/PassionOne-Bold.ttf)
+            src: url(../fontes/Passion_One/PassionOne-Bold.ttf)
             format('truetype');}
         @font-face {
             font-family: Sriracha;
-            src: url(fontes/Sriracha/Sriracha-Regular.ttf)
+            src: url(../fontes/Sriracha/Sriracha-Regular.ttf)
             format('truetype');
         }
 
@@ -84,7 +84,7 @@
         }
 
         #ppreto{
-            background-image: url(imagens/background001.jpg);
+            background-image: url(../imagens/background001.jpg);
             background-position: center right;
             background-repeat: no-repeat;
             background-size: cover;
@@ -93,7 +93,7 @@
         }
        
         #spreto{
-            background-image: url(imagens/background002.jpg);
+            background-image: url(../imagens/background002.jpg);
             background-position: center right;
             background-repeat: no-repeat;
             background-size: cover;
