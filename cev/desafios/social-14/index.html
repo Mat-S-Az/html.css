@@ -7,13 +7,13 @@
 
     <style>
         body {
-            background-image:url(imagens/fundo-madeira.jpg);
+            background-image:url(imagens/fundo-office.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center center;
         }
-        div {
+        #iphone {
             height: 600px;
             width: 600px;
             background-size: contain;
@@ -28,27 +28,84 @@
         }
         iframe {
             position: relative;
-            height: 490px;
+            height: 503px;
             width: 240px;
-            top: 64px;
+            top: 60px;
             left: 181px;
-            border-radius: 0px 0px 20px 20px;
+            border-radius: 0px 0px 40px 40px;
 
         }
+
+        #instagram {
+            position: absolute;
+            left: 90%;
+            top: 10%;
+        }
+
+        #home {
+            position: absolute;
+            left: 90%;
+            top: 2%;
+
+        }
+
+        #github {
+            position: absolute;
+            left: 90%;
+            top: 18%;
+
+        }
+
+        #youtube {
+            position: absolute;
+            left: 90%;
+            top: 26%;
+
+        }
+
+        .logo{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+       
+
+        .logo:hover {
+            height: 55px;
+            width: 55px;
+            box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.459);
+        }
+        
     </style>
 </head>
 <body>
     <section>
         <div id="iphone">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.932697452852!2d-76.81507832419346!3d39.67372850052602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c869cdbbaac227%3A0x5afd9349ded2c946!2s5114%20Wertz%20Rd%2C%20Hampstead%2C%20MD%2021074!5e0!3m2!1spt-PT!2sus!4v1773874880120!5m2!1spt-PT!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-            
-            
+            <iframe name="frame" src="http://127.0.0.1:5501/cev/desafios/social-14/home.html" frameborder="0" width="500px" height="300px">
 
+        </iframe>
+        </div> 
+        <div id="instagram" >
+            <a href="http://127.0.0.1:5501/cev/desafios/social-14/insta.html "target="frame">
+                <img class="logo" src="imagens/logo-instagram.jpg" alt="instagram" >
+            </a>
+        </div>  
+        <div id="youtube" >
+            <a href=https://www.youtube.com/ target="frame">
+                <img class="logo" src="imagens/logo-youtube.jpg" alt="instagram" >
+            </a>
         </div>
-    </section>
-
-
-    
+        <div id="home" >
+            <a href="http://127.0.0.1:5501/cev/desafios/social-14/home.html"target="frame">
+                <img class="logo" src="imagens/logo-home.jpg" alt="instagram" >
+            </a>
+        </div>
+        <div id="github" >
+            <a href=https://github.com/Mat-S-Az target="frame">
+                <img class="logo" src="imagens/logo-github.jpg" alt="instagram" >
+            </a>
+        </div>     
+    </section>   
 </body>
 </html>
