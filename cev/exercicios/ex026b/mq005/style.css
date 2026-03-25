@@ -1,76 +1,89 @@
 @charset "UTF-*";
 
-body,html {
-    background-color: #ddf9eb; /* verde pastel suave */
-}
-
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0%;
-    margin: 0%;
+    background-color: #ddf9eb;
+    height: 100%;
 }
 
-#items {
-    display:none ;
-}
-
-menu a {
-    text-decoration: none;
-    border-top: 1px solid #C6F6D5; /* verde claro */
-    display: block;
+header h1 {
+    padding: 10px;
     text-align: center;
-    padding: 7px;
-    color: #ddf9eb; /* verde profundo */
-    
+    background-color: #38A169;
+    color: white;
 }
 
 #burger {
     display: block;
     background-color: #22543D;
-    text-align: center;
     color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
 }
 
 #burger:hover {
+    background-color: #ddf9eb;
     color: #22543D;
-    background-color: #ddf9eb;;
+}
+
+#items {
+    display: none;
+}
+
+#items.active {
+    display: block;
 }
 
 menu {
-    background-color: #2F855A; 
-    
+    background-color: #2F855A;
 }
 
-menu ul { 
-    list-style-type: none;
+menu ul {
+    list-style: none;
 }
 
-header h1 {
-    padding: 7px;
+menu a {
+    display: block;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: #276e4a;
+    color: #ddf9eb;
+    text-decoration: none;
     text-align: center;
-    background-color: #38A169; /* verde médio */
+    transition: all 0.3s ease;
+}
+
+menu a:hover {
+    background-color: #C6F6D5;
+    color: #22543D;
 }
 
 article {
     background-color: white;
-    width: 90vw;
-    margin: auto;
+    max-width: 90vw;
+    margin: 15px auto;
+    padding: 15px;
     border-radius: 15px;
 }
 
 article h2 {
-    margin: 10px;
-    padding-top: 10px;
+    margin: 10px 0;
+    color: #276e4a;
 }
 
 article p {
-    padding: 5px;
-    margin: 5px;
+    margin: 10px 0;
     text-indent: 10px;
     text-align: justify;
-}
-
-menu a:hover {
-    background-color: #C6F6D5; /* verde claro no hover */
-    color: #22543D;
+    line-height: 1.6;
 }
