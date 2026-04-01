@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            background-color: rgb(56, 140, 219);
+            height: 100px;
+            width: 90vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-between;
+            align-content: space-evenly;
+            align-items: center;
+            
+            
+            
+           
+            
+        }
+        .item {
+            background-color: rgb(233, 111, 11);
+            text-align: center;
+            border: 1px solid ;
+            flex-basis: 200px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            
+            
+            
+            
+        }
+
+        #A{
+            order: 6;
+            flex-shrink: 1;
+           
+            
+        }
+
+        #D {
+           flex-grow: 1; 
+        }
+
+        #C {
+            flex-shrink: 10;
+        }
+
+        #E {
+            
+        }
+
+        #F {
+            flex-grow: 4;
+        }
+
+        #B {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="A">Example of box A</div>
+        <div class="item" id="B">Example of box B</div>
+        <div class="item" id="C">Example of box C</div>
+        <div class="item" id="D">Example of box D</div>
+        <div class="item" id="E">Example of box E</div>
+        <div class="item" id="F">Example of box F</div>
+    </div>
+</body>
+</html>

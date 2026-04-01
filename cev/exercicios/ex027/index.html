@@ -3,72 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexbox</title>
+    <title>Document</title>
     <style>
-        .container {
-            background-color: rgb(56, 140, 219);
-            height: 100px;
-            width: 90vw;
+        body, html {
+            background-color: rgb(194, 236, 250);
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: rgb(98, 160, 201);
             display: flex;
+            justify-content: space-between;
             flex-flow: row wrap;
-            justify-content:space-between;
-            align-content: space-evenly;
-            align-items: center;
-            
-            
-            
-           
-            
+            height: 100px;
         }
-        .item {
-            background-color: rgb(233, 111, 11);
+        article {
+            background-color: white;
+            padding: 10px;
+            margin: 15px;
+        }
+        ul {
+            list-style-type: none;     
+        }
+
+        menu {
+            margin: 10px;
+            align-self: center;
+        }
+
+        menu p {
+            display: inline;
+            background-color: rgb(35, 117, 189);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        h1 {
+            margin: 7px;
+            flex: none;
+            align-self: center;
+        }
+
+        @media screen and (max-width:700px){
+           header {
+            flex-flow: column nowrap;
+            height: fit-content;
+           }
+
+           menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             text-align: center;
-            border: 1px solid ;
-            flex-basis: 200px;
-            flex-shrink: 0;
-            flex-grow: 0;
-            
-            
-            
-            
-        }
+            padding:0;
+            margin: 10px 0;
+           }
+           menu p {
+            display: block;
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            margin: 5px 0;
+            padding: 10px;
+            overflow-wrap: break-word;
+            word-break: break-word;
+           }
 
-        #A{
-            order: 6;
-            flex-shrink: 1;
-           
-            
-        }
+           h1 {
+            align-self: flex-start;
+           }
 
-        #D {
-           flex-grow: 1; 
-        }
-
-        #C {
-            flex-shrink: 10;
-        }
-
-        #E {
-            
-        }
-
-        #F {
-            flex-grow: 4;
-        }
-
-        #B {
-            
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item" id="A">Example of box A</div>
-        <div class="item" id="B">Example of box B</div>
-        <div class="item" id="C">Example of box C</div>
-        <div class="item" id="D">Example of box D</div>
-        <div class="item" id="E">Example of box E</div>
-        <div class="item" id="F">Example of box F</div>
-    </div>
+    <header>
+        <h1>Meu Site</h1>
+        <menu>
+            <p>Option 1</p>
+            <p>Option 2</p>
+            <p>Option 3</p>
+            <p>Option 4</p>
+            <p>Option 5</p>
+            <p>Option 6</p>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste de flexbox</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eveniet, consequuntur minima officiis tempore ipsum? Ipsam odio dolor laborum animi dolorum. Quasi odit cumque ratione fugit fugiat harum officiis. Quasi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores in fugiat at. Ducimus blanditiis eligendi autem laborum! Sequi quia dolores enim voluptatibus, praesentium optio sapiente recusandae, necessitatibus nemo totam corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas pariatur aspernatur nihil accusantium temporibus earum ad eum, soluta itaque ut odio perspiciatis exercitationem facere vitae, eius harum est iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quod eius harum non ipsa illum delectus ad adipisci nobis possimus! Magni laboriosam explicabo eaque impedit deleniti provident harum recusandae accusamus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio rem vero dolorum quis atque deserunt numquam, dolor accusamus nisi alias dolorem minima repellat, ullam tenetur eveniet mollitia molestiae earum perferendis!</p>
+        </article>
+    </main>
+    
 </body>
 </html>
