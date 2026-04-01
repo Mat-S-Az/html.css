@@ -7,9 +7,9 @@
     <style>
         body, html {
             background-color: rgb(194, 236, 250);
-            margin: 0%;
-            padding: 0%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         header {
@@ -23,27 +23,32 @@
             background-color: white;
             padding: 10px;
             margin: 15px;
+            border-radius: 5px;
         }
         ul {
             list-style-type: none;     
         }
 
-        menu {
+        nav {
             margin: 10px;
             align-self: center;
+            color: white;
+            
         }
 
-        menu p {
+        nav p {
             display: inline;
             background-color: rgb(35, 117, 189);
             padding: 10px;
             margin: 5px;
+            border-radius: 5px;
         }
 
         h1 {
             margin: 7px;
             flex: none;
             align-self: center;
+            color: white;
         }
 
         @media screen and (max-width:700px){
@@ -52,27 +57,35 @@
             height: fit-content;
            }
 
-           menu {
+           nav {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 90%;
             text-align: center;
-            padding:0;
-            margin: 10px 0;
+            padding: 10px;
+            
            }
-           menu p {
+           nav p {
             display: block;
             width: 100%;
             min-width: 0;
             box-sizing: border-box;
             margin: 5px 0;
             padding: 10px;
-            overflow-wrap: break-word;
-            word-break: break-word;
+            
+           }
+
+           nav p:hover {
+            transition: background-color 0.2s;
+            background-color: rgb(227, 244, 253);
+            cursor: pointer;
+            box-shadow: 1px 1px 5px black;
+            color: black;
            }
 
            h1 {
             align-self: flex-start;
+            text-shadow: 1px 1px 7px rgb(82, 133, 167);
            }
 
         }
@@ -81,19 +94,19 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <nav>
             <p>Option 1</p>
             <p>Option 2</p>
             <p>Option 3</p>
             <p>Option 4</p>
             <p>Option 5</p>
             <p>Option 6</p>
-        </menu>
+        </nav>
     </header>
     <main>
         <article>
             <h2>Teste de flexbox</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eveniet, consequuntur minima officiis tempore ipsum? Ipsam odio dolor laborum animi dolorum. Quasi odit cumque ratione fugit fugiat harum officiis. Quasi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores in fugiat at. Ducimus blanditiis eligendi autem laborum! Sequi quia dolores enim voluptatibus, praesentium optio sapiente recusandae, necessitatibus nemo totam corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas pariatur aspernatur nihil accusantium temporibus earum ad eum, soluta itaque ut odio perspiciatis exercitationem facere vitae, eius harum est iure? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quod eius harum non ipsa illum delectus ad adipisci nobis possimus! Magni laboriosam explicabo eaque impedit deleniti provident harum recusandae accusamus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio rem vero dolorum quis atque deserunt numquam, dolor accusamus nisi alias dolorem minima repellat, ullam tenetur eveniet mollitia molestiae earum perferendis!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eveniet, consequuntur minima officiis tempore ipsum? Ipsam odio dolor laborum animi dolorum. Quasi odit cumque ratione fugit fugiat harum officiis... </p>
         </article>
     </main>
     
