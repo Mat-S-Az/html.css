@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #pai {
+            display: flex;
+            background-color: lightgray;
+            padding: 10px;
+            flex-wrap: wrap;
+            flex-flow: column;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: content;
+            
+        }
+        #primeiro{
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: row-reverse;
+           justify-content: flex-end;
+
+        }
+        #text1 {
+            flex-shrink: 0;   
+            flex-grow: 0;
+            max-width: 95vw;
+            align-self: center;
+            
+            
+        }
+        #img1 {
+            width: 200px;
+            height: 200px;
+            align-self:center ;
+           
+        }
+
+        #segundo{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        #text2 {
+            flex-shrink: 0;   
+            flex-grow: 0;
+            max-width: 90vw;
+            align-self: center;
+
+        }
+
+        h2{
+            padding: 5px;
+        }
+
+        p {
+            padding: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Conteúdo normal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente reiciendis atque, placeat, laborum molestias ducimus qui, pariatur quae nesciunt ullam quas. Possimus quis laudantium nemo autem velit officiis iusto a.</p>
+    
+    <div id="pai">
+        <div id="primeiro">
+            <img id="img1" src="Tech.png" alt="dev">
+            <article id="text1">
+                <h2>Elemento media -> text</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium inventore deleniti atque, repudiandae odit magnam nemo ullam earum ratione corrupti. Natus hic doloremque similique vero, explicabo recusandae quia repellendus consectetur!</p>
+            </article>
+        </div>
+        <div id="segundo">
+            <article id="text2">
+                <h2>Elemento text -> media</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae nulla deleniti earum repellendus perspiciatis, impedit cumque molestias aspernatur, dicta dolorem fuga deserunt non quidem suscipit eos sunt! Assumenda, hic.</p>
+            </article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=VPvhas6LIkdwzlk-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </div>
+    </div>
+    <h2>Conteúdo normal</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequatur iusto quo non distinctio quaerat sed obcaecati repellendus eum? In voluptas quibusdam incidunt sed aliquam doloremque debitis quidem, nisi quasi.</p>
+    
+</body>
+</html>
