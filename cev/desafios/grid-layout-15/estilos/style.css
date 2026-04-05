@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, p {
+    padding: 10px;
+}
+
+p {
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr;
+    height: 100vh;
+}
+
+.topo{
+    display: grid;
+    background-color: antiquewhite;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.menu{
+    display: grid;
+    background-color: azure;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    align-items: center;
+}
+
+.menu a {
+    background-color: rgb(113, 149, 137);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    
+}
+
+.principal{
+    background-color: rgb(186, 244, 225);
+    grid-row: 3 / 4;
+    grid-column: 1 / -2;
+    
+}
+
+
+
+.secundario{
+    background-color: rgb(253, 173, 173);
+    grid-row: 3 / 4;
+    grid-column: -2 / -1;
+}
+
+.rodape{
+    display: grid;
+    background-color: rgb(237, 237, 191);
+    grid-row: -2 / -1;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-items: center;
+}
