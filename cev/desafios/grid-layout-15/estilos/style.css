@@ -18,7 +18,7 @@ p {
 .conteudo{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 2fr 1fr 6fr 1fr;
+    grid-template-rows: 100px 50px 6fr 50px;
     height: 100vh;
 }
 
